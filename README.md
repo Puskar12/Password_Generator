@@ -1,16 +1,64 @@
-# React + Vite
+# <> Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, interactive **Password Generator** built with **Core React** and **React Hooks**.
+This project helped me practice state management, side effects, and custom logic in React.
 
-Currently, two official plugins are available:
+=> Live Demo: [Password Generator](https://password-generator-zeta-five-88.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## <> Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Generate secure passwords with:
 
-## Expanding the ESLint configuration
+  * Adjustable length (`6–20` characters)
+  * Option to include **numbers**
+  * Option to include **special characters**
+* One-click **copy to clipboard**
+* Responsive UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## <> Built With
+
+* **React** – for component-based UI
+* **React Hooks**:
+
+  * `useState` → manage input state and generated password
+  * `useCallback` → memoize the password generation function
+  * `useEffect` → run password generation on first render & when dependencies change
+* **JavaScript** – custom password generation logic
+* **Tailwind CSS** – styling (with AI assistance, so I could focus on React)
+
+---
+
+## <> Learning Goals
+
+* Deepen understanding of **React Hooks** (`useState`, `useCallback`, `useEffect`)
+* Implement conditional logic in password generation
+* Trigger functions on specific dependency updates with `useEffect`
+* Maintain clean and reusable React code structure
+* Keep CSS secondary, with focus on **React fundamentals**
+
+---
+
+## <> Project Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <repo-url>
+cd password-generator
+npm install
+npm start
+```
+
+
+
+---
+
+## <> Acknowledgment
+
+* **Styling help** was taken with AI assistance so that I could focus fully on **core React and React Hooks**.
+
+---
